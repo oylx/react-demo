@@ -35,7 +35,6 @@ module.exports = {
           ["pages", "./src/pages"],
           ["config", "./src/config"],
           ["components", "./src/components"],
-          ["widgets", "./src/widgets"],
           ["stores", "./src/stores"],
           ["utils", "./src/utils"],
           ["chart", "./src/charts"],

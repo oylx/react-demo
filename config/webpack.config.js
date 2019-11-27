@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin') // 引入插件
 
 module.exports = {
   entry: {
-    main: './src/App.js' // 需要打包的文件入口
+    main: './src/main.js' // 需要打包的文件入口
   },
   resolve: {
     extensions: ['.js'],
@@ -26,10 +26,7 @@ module.exports = {
         use: {
           loader: 'babel-loader', // 使用 babel-loader
           options: {
-            presets: [
-              ['@babel/preset-env'],
-              '@babel/preset-react'
-            ],
+            presets: ["@babel/preset-env", "@babel/preset-react"],
             plugins: [
               "@babel/plugin-transform-runtime",
             ]
@@ -43,8 +40,8 @@ module.exports = {
         options: {
           //  自动修复导致有时候自动保存文件时工程重复自动编译
           fix: false,
-          quiet: true,
-        },
+          quiet: true
+        }
       }, {
         test: /\.less$/,
         use: ['style-loader', 'css-loader', {

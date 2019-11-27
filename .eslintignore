@@ -1,0 +1,41 @@
+# IDE配置文件
+
+.vscode/*
+
+.idea/*
+
+# node modules
+node_modules/
+
+.gitignore
+
+*.html
+README.md
+package.json
+package-lock.json
+yarn.lock
+.eslintrc.js
+
+# 打包文件
+build
+
+# 路径配置文件
+config/*
+
+# 脚本文件
+scripts/*
+templates/*
+
+__mock_data__/*
+
+app/bsl/
+app/interface/bsl.js
+app/utils/form-urlencoded.js
+web/webpack.config.js
+web/output/
+patch/
+res/
+script/
+gulpfile.js
+
+
