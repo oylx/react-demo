@@ -7,6 +7,7 @@ import { AddonCss } from './components/importCss';
 import { useComponentSize } from './components/monitorComponent';
 import { useInputValue } from './components/useInputValue';
 import { UseRaf } from './components/useRaf';
+import { UseSpring } from './components/useSpring';
 
 const App = () => {
   const windowSize = useWindowSize();
@@ -29,6 +30,7 @@ const App = () => {
         {name.value}
       </div>
       <UseRaf/>
+      <UseSpring/>
     </>
   );
 };
