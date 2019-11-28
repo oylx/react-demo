@@ -6,6 +6,7 @@ import { useWindowSize } from './components/monitorWindowSize';
 import { AddonCss } from './components/importCss';
 import { useComponentSize } from './components/monitorComponent';
 import { useInputValue } from './components/useInputValue';
+import { UseRaf } from './components/useRaf';
 
 const App = () => {
   const windowSize = useWindowSize();
@@ -23,8 +24,11 @@ const App = () => {
       <AddonCss/>
       {componentSize.width}
       <textArea ref={ref} />
-      <input {...name} />
-      {name.value}
+      <div>
+        <input {...name} />
+        {name.value}
+      </div>
+      <UseRaf/>
     </>
   );
 };
