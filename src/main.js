@@ -5,6 +5,7 @@ import { UseDocumentTitle } from './components/useEffectDemo';
 import { useWindowSize } from './components/monitorWindowSize';
 import { AddonCss } from './components/importCss';
 import { useComponentSize } from './components/monitorComponent';
+import { useInputValue } from './components/useInputValue';
 
 const App = () => {
   const windowSize = useWindowSize();
@@ -12,6 +13,8 @@ const App = () => {
   //  set ref
   const ref = useRef(null);
   const componentSize = useComponentSize(ref);
+  // useInputValue
+  const name = useInputValue('Jamie');
   return (
     <>
       <UseStateDemo/>
@@ -20,6 +23,8 @@ const App = () => {
       <AddonCss/>
       {componentSize.width}
       <textArea ref={ref} />
+      <input {...name} />
+      {name.value}
     </>
   );
 };
